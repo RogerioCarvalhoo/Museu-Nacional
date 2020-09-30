@@ -50,23 +50,42 @@ a:hover {
 	display: block;
 	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
+	margin-top: 15px;
 	float: left;
 }
 
 header {
 	padding: 15px 0;
 	height: 55px;
+	margin-bottom: 20px;
 
 }
 
 #menu {
 	width: 800px;
-	-js-display: flex; /*Comando para compatibilidade com navegadores mais antigos*/
-	display: flex; /*Comando para começar interpretar as tags de FlexBox*/
-	flex-direction: row; /*Define a direção ou ordem dos itens*/
-	flex-wrap: nowrap; /*Define se os itens dentro do contenner vai quebrar (ir para outra linha) ou não*/
-	justify-content: flex-end; /*distribuição dos itens dentro do contenner na horizontal*/
+	/*-js-display: flex; /*Comando para compatibilidade com navegadores mais antigos
+	display: flex; /*Comando para começar interpretar as tags de FlexBox
+	flex-direction: row; /*Define a direção ou ordem dos itens
+	flex-wrap: nowrap; /*Define se os itens dentro do contenner vai quebrar (ir para outra linha) ou não
+	justify-content: flex-end; /*distribuição dos itens dentro do contenner na horizontal
 	align-items: flex-start;  /*Alinhamento dos itens na vertical*/
+
+	-js-display: flex; /*Comando para compatibilidade com navegadores mais antigos*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex; /*Comando para começar interpretar as tags de FlexBox*/
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	        flex-direction: row; /*Define a direção ou ordem dos itens*/
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap; /*Define se os itens dentro do contenner vai quebrar (ir para outra linha) ou não*/
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	        justify-content: flex-end; /*distribuição dos itens dentro do contenner na horizontal*/
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	        align-items: flex-start;  /*Alinhamento dos itens na vertical*/
 }
 
 #menu ul {
@@ -90,3 +109,130 @@ header {
 
 /* Inicio Conteudo
 =====================================================*/
+
+/*Conteudo principal*/
+
+#conteudo {
+	/*-js-display: flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;*/
+
+	-js-display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+#conteudo-principal {
+	width: 710px;
+}
+
+/*Conteudo Lateral*/
+aside {
+	width: 350px;
+	background-color: #ebe7dd;
+	padding-bottom: 30px;
+}
+
+section#visita {
+	margin-top: 10px;
+	padding: 20px 27px 27px 27px;
+	background-color: #cdc8b1;
+}
+
+section#visita h4 {
+	color: #86521a;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+section#galeria {
+	padding: 20px 27px;
+}
+
+section#galeria h4 {
+	color: #86521a;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+#galeria-imagens {
+	/*-js-display: flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;*/
+
+	-js-display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	        justify-content: center;
+}
+
+#galeria-imagens a img {
+	width: 93px;
+	height: 93px;
+}
+
+#galeria-imagens a {
+	padding: 20px;
+	background-image: url(../img/fundo-foto.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+/* Formulário
+===================================================*/
+input {
+	background-color: #fff;
+	border: 1px solid #ada484;
+	width: 108px;
+	height: 20px;
+	cursor: text;
+}
+
+input[type="number"] {
+	width: 30px;
+}
+
+.botao {
+	width: 100%;
+	height: 30px;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: center;
+	color: #fff;
+	background-color: #9b9271;
+	cursor: pointer;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	display: none;
+}
