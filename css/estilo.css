@@ -1,0 +1,92 @@
+/*Padrão da pagina
+==========================================*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f4f2ec;
+	background-image: url(../img/fundo.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	font: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+	font-size: 12px;
+}
+
+#container {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:active, a:visited {
+	color: #af670a;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #227115;
+}
+
+.lp {
+	clear: both;
+}
+
+/*Cabeçalho
+=========================================*/
+
+.logo a {
+	width: 248px;
+	height: 21px;
+	text-indent: -9999px;
+	display: block;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+
+header {
+	padding: 15px 0;
+	height: 55px;
+
+}
+
+#menu {
+	width: 800px;
+	-js-display: flex; /*Comando para compatibilidade com navegadores mais antigos*/
+	display: flex; /*Comando para começar interpretar as tags de FlexBox*/
+	flex-direction: row; /*Define a direção ou ordem dos itens*/
+	flex-wrap: nowrap; /*Define se os itens dentro do contenner vai quebrar (ir para outra linha) ou não*/
+	justify-content: flex-end; /*distribuição dos itens dentro do contenner na horizontal*/
+	align-items: flex-start;  /*Alinhamento dos itens na vertical*/
+}
+
+#menu ul {
+	margin: 20px;
+	text-align: right;
+}
+
+#menu ul li {
+	display: inline;	
+}
+
+#menu ul li a:link {
+	margin-right: 25px;
+	padding-bottom: 3px;
+	text-transform: uppercase;
+}
+
+#menu ul li a:hover {
+	border-bottom: 1px solid #535858;
+}
+
+/* Inicio Conteudo
+=====================================================*/
