@@ -136,13 +136,50 @@ header {
 
 #conteudo-principal {
 	width: 710px;
+	margin-bottom: 30px;
+}
+
+#conteudo-principal h3 {
+	font-size: 1.2em;
+	color: #227115;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+}
+
+#video, #mapa, #exposicao, #historia {
+	width: 310px;
+}
+
+#postagem {
+	-js-display: flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#exposicao ul {
+	list-style-type: circle;
+	text-indent: 25px;
+}
+
+#exposicao ul li {
+	line-height: 20px;
+}
+
+#historia p {
+	text-indent: 15px;
+	text-align: justify;
+	font-size: 1.1em;
+	margin-bottom: 10px;
 }
 
 /*Conteudo Lateral*/
 aside {
 	width: 350px;
 	background-color: #ebe7dd;
-	padding-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 section#visita {
@@ -202,6 +239,24 @@ section#galeria h4 {
 	background-position: center;
 }
 
+/*Rodapé
+===================================================*/
+
+footer {
+	text-align: center;
+	padding: 20px;
+	background-image: url(../img/fundo-rodape.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+footer p {
+	margin-bottom: 20px;
+}
+
+footer a {
+	padding: 30px 10px;
+}
 
 
 /* Formulário
